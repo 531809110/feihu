@@ -1,0 +1,17 @@
+.my_col-1 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 15%;
+    flex: 0 0 15%;
+    max-width: 15%;
+}
+.breadcrumb {
+    background-color: #fff;
+    color: #000;
+    font-size: 0.9rem;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+    content: "|";
+}
+.my_breadcrumb-item + .my_breadcrumb-item::before {
+    content: " ";
+}

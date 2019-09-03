@@ -1,0 +1,11 @@
+.register_bg{
+    background-image: url("../image/login_bg.jpg");
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.form-control {
+    padding: 0 0;
+    font-size: 0.8rem;
+}

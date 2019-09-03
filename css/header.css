@@ -1,0 +1,9 @@
+.dropdown-toggle::after {
+    vertical-align: center;
+}
+.dropdown-menu {
+    min-width: 0;
+}
+.h-30{
+    height:30%;
+}
