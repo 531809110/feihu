@@ -70,11 +70,11 @@
                 </div>
                 <!-- 2.表单-->
                 <div class="col-4 px-0">
-                    <input class="form-control " type="text"/>
+                    <input class="form-control " type="text"/ id="uname">
                 </div>
                 <!-- 3.提示文字-->
-                <div class="col-6 px-0 my_color pl-2 ">
-                    用户名可包含_字母和数字
+                <div class="col-6 px-0 my_color pl-2 " id="unameTip">
+                    
                 </div>
             <!--第二行 -->
                <!-- 1.文字，右对齐-->
@@ -84,11 +84,11 @@
                </div>
                <!-- 2.表单-->
                <div class="col-4 px-0">
-                   <input class="form-control " type="password"/>
+                   <input class="form-control " type="password"/ id="upwd">
                </div>
                <!-- 3.提示文字-->
-               <div class="col-6 px-0 my_color pl-2 ">
-                   请输入6-8位密码
+               <div class="col-6 px-0 my_color pl-2 " id="upwdTip">
+                   
                </div>
 
                 <!--第八行 -->
@@ -115,7 +115,7 @@
                 <!-- 2.表单-->
                 <div class="col-6 px-0 d-flex mb-2">
                     <!--<div class="">-->
-                        <btton class="btn btn-primary">提交注册</btton>
+                        <button class="btn btn-primary" id="submit">提交登录</button>
                     <!--</div>-->
                 </div>
                 <!--3.提示文字-->
@@ -169,5 +169,36 @@
         </div>
     </div>
 </div>
+
+<script>
+//DOM获取用户名输入框，用户名检测提示框
+var uname=document.getElementById("uname");
+var unameTip=document.getElementById("unameTip");
+//DOM获取密码输入框，密码检测提示框
+var upwd=document.getElementById("upwd");
+var upwdTip=document.getElementById("upwdTip");
+// 用户名框获取焦点时，提示用户名格式
+uname.onfocus=function(){
+    unameTip.innerHTML="用户名可包含_字母和数字";
+};
+// 用户名框失去焦点时，定义正则表达式，检测输入内容是否符合格式要求
+uname.onblur=function(){
+    unameTip.innerHTML= (/^[\w]{1,16}$/.test(uname.value)==true?"用户名格式正确":"用户名格式不正确");
+};
+
+
+// 用户名框获取焦点时，提示密码格式
+upwd.onfocus=function(){
+    upwdTip.innerHTML="请输入6-8位密码";
+};
+// 密码框失去焦点时，定义正则表达式，检测输入内容是否符合格式要求
+upwd.onblur=function(){
+    upwdTip.innerHTML= (/^[0-9a-zA-Z,./!@#$%]{6,8}$/.test(uname.value)==true?"密码格式正确":"密码格式不正确");
+};
+
+//DOM获取提交按钮，发送AJAX请求到服务器
+var submit=document.getElementById("submit");
+</script>
+
 </body>
 </html>
