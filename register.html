@@ -1,261 +1,192 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maxmum-scale=1.0,user-scalable=0">
-    <link rel="stylesheet" href="css/bootstrap.css"/>
-    <link rel="stylesheet" href="css/comm.css"/>
-    <link rel="stylesheet" href="css/header.css"/>
-    <link rel="stylesheet" href="css/footer.css"/>
-    <link rel="stylesheet" href="css/register.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/comm.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/register.css" />
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </head>
-<body>
-<div class="container">
-    <!-- 导航条左半部分，登陆注册链接 -->
-    <div class="row mx-0 my_bg justify-content-between">
-        <div class="col-8 px-0 my_small py-1">
-            <span>您好，欢迎来到飞虎乐购！</span>
-            <a href="login.html">安全登录</a>
-            <span> 还没加入我们？</span>
-            <a href="register.html">免费注册</a>
-        </div class="col-4 px-0">
-        <!-- 导航条右半部分，下拉菜单 -->
-        <div class="row mx-0">
-            <!-- 右边又分三个部分 -->
-            <div class="col-4 px-0">
-                <!-- 第一部分的下拉菜单 -->
-                <div data-toggle="dropdown" class="btn dropdown-toggle py-0 mb-1">
-                    <span class="my_small">我的账户</span>
-                    <ul class="dropdown-menu">
-                        <li class="mx-2"><a class="my_small" href="">账户首页</a></li>
-                        <li class="mx-2"><a class="my_small" href="">我的收藏</a></li>
-                        <li class="mx-2"><a class="my_small" href="">我的订单</a></li>
-                    </ul>
-                </div>
-                <!--<div class="dropdown-toggle">-->
-            </div>
-            <div class="col-4 px-0">
 
-                <div data-toggle="dropdown" class="btn dropdown-toggle py-0 mb-1">
-                    <span class="my_small">网站导航</span>
-                    <ul class="dropdown-menu mx-2">
-                        <li class="mx-2"><a class="my_small" href="">帮助中心</a></li>
-                        <li class="mx-2"><a class="my_small" href="">联系客服</a></li>
-                        <li class="mx-2"><a class="my_small" href="">常见问题</a></li>
-                    </ul>
+<body>
+
+    <div class="container">
+        <!-- 页头 -->
+        <header id="header"></header>
+        <!-- 背景图-->
+        <div class="row register_bg mx-0">
+            <!-- 注册框-->
+            <div class="col-6 px-0 offset-5 border border-warning pl-3 bg-white my-5">
+                <div class="my_big py-2">用户注册</div>
+                <div>
+                    <span class="my_small">您尚未注册：</span>
+                    <span class="my_tip">请填写注册信息，带有*号的为必填项。</span>
                 </div>
-            </div>
-            <div class="col-4 "><a class="my_small" href="">加入收藏</a></div>
-        </div>
-    </div>
-    <!-- 背景图-->
-    <div class="row register_bg mx-0">
-        <!-- 注册框-->
-       <div class="col-6 px-0 offset-5 border border-warning pl-3 bg-white my-5">
-            <div class="my_big py-2">用户注册</div>
-            <div>
-                <span class="my_small">您尚未注册：</span>
-                <span class="my_tip">请填写注册信息，带有*号的为必填项。</span>
-            </div>
-           <!-- 注册的明细，分左中右三部分-->
-            <div class="row mx-0">
-                <!-- 第一行-->
-                <!-- 1.文字，右对齐-->
-                <div class="col-2 px-0 d-flex justify-content-end mb-2">
-                    <span class="my_tip ">*</span>
-                    <span class="my_small ">用户名：</span>
-                </div>
-                <!-- 2.表单-->
-                <div class="col-4 px-0">
-                    <input class="form-control " type="text"/>
-                </div>
-                <!-- 3.提示文字-->
-                <div class="col-6 px-0 my_color pl-2 ">
-                    用户名可包含_字母和数字
-                </div>
-            <!--第二行 -->
-               <!-- 1.文字，右对齐-->
-               <div class="col-2 px-0 d-flex justify-content-end mb-2 ">
-                   <span class="my_tip ">*</span>
-                   <span class="my_small ">密码：</span>
-               </div>
-               <!-- 2.表单-->
-               <div class="col-4 px-0">
-                   <input class="form-control " type="password"/>
-               </div>
-               <!-- 3.提示文字-->
-               <div class="col-6 px-0 my_color pl-2 ">
-                   请输入6-8位密码
-               </div>
-                <!--第三行 -->
-                <!-- 1.文字，右对齐-->
-                <div class="col-2 px-0 d-flex justify-content-end mb-2 ">
-                    <span class="my_tip ">*</span>
-                    <span class="my_small ">确认密码：</span>
-                </div>
-                <!-- 2.表单-->
-                <div class="col-4 px-0">
-                    <input class="form-control " type="password"/>
-                </div>
-                <!-- 3.提示文字-->
-                <div class="col-6 px-0 my_color pl-2">
-                    请输入6-8位密码
-                </div>
-                <!--第四行 -->
-                <!-- 1.文字，右对齐-->
-                <div class="col-2 px-0 d-flex justify-content-end mb-2">
-                    <span class="my_tip ">*</span>
-                    <span class="my_small ">邮箱：</span>
-                </div>
-                <!-- 2.表单-->
-                <div class="col-4 px-0">
-                    <input class="form-control " type="email"/>
-                </div>
-                <!-- 3.提示文字-->
-                <div class="col-6 px-0 my_color pl-2">
-                    请输入邮箱
-                </div>
-                <!--第五行 -->
-                <!-- 1.文字，右对齐-->
-                <div class="col-2 px-0 d-flex justify-content-end mb-2">
-                    <!--<span class="my_tip ">*</span>-->
-                    <span class="my_small ">推荐人：</span>
-                </div>
-                <!-- 2.表单-->
-                <div class="col-4 px-0">
-                    <input class="form-control " type="text"/>
-                </div>
-                 <!--3.提示文字-->
-                <div class="col-6 px-0 my_color pl-2">
-                    请输入推荐人工号
-                </div>
-                <!--第六行 -->
-                <!-- 1.文字，右对齐-->
-                <div class="col-2 px-0 d-flex justify-content-end mb-2">
-                    <!--<span class="my_tip ">*</span>-->
-                    <span class="my_small ">活动代码：</span>
-                </div>
-                <!-- 2.表单-->
-                <div class="col-4 px-0">
-                    <input class="form-control " type="text"/>
-                </div>
-                <!--3.提示文字-->
-                <div class="col-6 px-0 my_color pl-2">
-                    请输入活动代码
-                </div>
-                <!--第七行 -->
-                <!-- 1.文字，右对齐-->
-                <div class="col-2 px-0 d-flex justify-content-end mb-2">
-                    <!--<span class="my_tip ">*</span>-->
-                    <span class="my_small ">验证码：</span>
-                </div>
-                <!-- 2.表单-->
-                <div class="col-4 px-0">
-                    <input class="form-control " type="text"/>
-                </div>
-                <!--3.提示文字-->
-                <div class="col-6 px-0 my_color pl-2">
-                    请输入验证码
-                </div>
-                <!--第八行 -->
-                <!-- 1.文字，右对齐-->
-                <div class="col-2 px-0 d-flex justify-content-end mb-2">
-                    <!--<span class="my_tip ">*</span>-->
-                    <!--<span class="my_small ">验证码：</span>-->
-                </div>
-                <!-- 2.表单-->
-                <div class="col-4 px-0 mb-2 my_small">
-                    <span class="border">1234</span>
-                    <a href="">换张图</a>
-                </div>
-                <!--3.提示文字-->
-                <div class="col-6 px-0 my_color pl-2">
-                    <!--请输入验证码-->
-                </div>
-                <!--第9行 -->
-                <!-- 1.文字，右对齐-->
-                <div class="col-2 px-0 d-flex justify-content-end mb-2">
-                    <!--<span class="my_tip ">*</span>-->
-                    <!--<span class="my_small ">验证码：</span>-->
-                </div>
-                <!-- 2.表单-->
-                <div class="col-6 px-0 d-flex mb-2">
-                    <div class="my_small">
-                    <input id="tongyi" class="pt-2" type="checkbox"/>
-                    <label for="tongyi">我已阅读并同意</label>
-                      <a href="">飞虎乐购用户协议</a>
+                <!-- 注册的明细，分左中右三部分-->
+                <div class="row mx-0">
+                    <!-- 第一行-->
+                    <!-- 1.文字，右对齐-->
+                    <div class="col-2 px-0 d-flex justify-content-end mb-2">
+                        <span class="my_tip ">*</span>
+                        <span class="my_small ">用户名：</span>
+                    </div>
+                    <!-- 2.表单-->
+                    <div class="col-4 px-0">
+                        <input class="form-control " type="text" />
+                    </div>
+                    <!-- 3.提示文字-->
+                    <div class="col-6 px-0 my_color pl-2 ">
+                        用户名可包含_字母和数字
+                    </div>
+                    <!--第二行 -->
+                    <!-- 1.文字，右对齐-->
+                    <div class="col-2 px-0 d-flex justify-content-end mb-2 ">
+                        <span class="my_tip ">*</span>
+                        <span class="my_small ">密码：</span>
+                    </div>
+                    <!-- 2.表单-->
+                    <div class="col-4 px-0">
+                        <input class="form-control " type="password" />
+                    </div>
+                    <!-- 3.提示文字-->
+                    <div class="col-6 px-0 my_color pl-2 ">
+                        请输入6-8位密码
+                    </div>
+                    <!--第三行 -->
+                    <!-- 1.文字，右对齐-->
+                    <div class="col-2 px-0 d-flex justify-content-end mb-2 ">
+                        <span class="my_tip ">*</span>
+                        <span class="my_small ">确认密码：</span>
+                    </div>
+                    <!-- 2.表单-->
+                    <div class="col-4 px-0">
+                        <input class="form-control " type="password" />
+                    </div>
+                    <!-- 3.提示文字-->
+                    <div class="col-6 px-0 my_color pl-2">
+                        请输入6-8位密码
+                    </div>
+                    <!--第四行 -->
+                    <!-- 1.文字，右对齐-->
+                    <div class="col-2 px-0 d-flex justify-content-end mb-2">
+                        <span class="my_tip ">*</span>
+                        <span class="my_small ">邮箱：</span>
+                    </div>
+                    <!-- 2.表单-->
+                    <div class="col-4 px-0">
+                        <input class="form-control " type="email" />
+                    </div>
+                    <!-- 3.提示文字-->
+                    <div class="col-6 px-0 my_color pl-2">
+                        请输入邮箱
+                    </div>
+                    <!--第五行 -->
+                    <!-- 1.文字，右对齐-->
+                    <div class="col-2 px-0 d-flex justify-content-end mb-2">
+                        <!--<span class="my_tip ">*</span>-->
+                        <span class="my_small ">推荐人：</span>
+                    </div>
+                    <!-- 2.表单-->
+                    <div class="col-4 px-0">
+                        <input class="form-control " type="text" />
+                    </div>
+                    <!--3.提示文字-->
+                    <div class="col-6 px-0 my_color pl-2">
+                        请输入推荐人工号
+                    </div>
+                    <!--第六行 -->
+                    <!-- 1.文字，右对齐-->
+                    <div class="col-2 px-0 d-flex justify-content-end mb-2">
+                        <!--<span class="my_tip ">*</span>-->
+                        <span class="my_small ">活动代码：</span>
+                    </div>
+                    <!-- 2.表单-->
+                    <div class="col-4 px-0">
+                        <input class="form-control " type="text" />
+                    </div>
+                    <!--3.提示文字-->
+                    <div class="col-6 px-0 my_color pl-2">
+                        请输入活动代码
+                    </div>
+                    <!--第七行 -->
+                    <!-- 1.文字，右对齐-->
+                    <div class="col-2 px-0 d-flex justify-content-end mb-2">
+                        <span class="my_tip ">*</span>
+                        <span class="my_small ">验证码：</span>
+                    </div>
+                    <!-- 2.表单-->
+                    <div class="col-4 px-0">
+                        <input class="form-control " type="text" />
+                    </div>
+                    <!--3.提示文字-->
+                    <div class="col-6 px-0 my_color pl-2">
+                        请输入验证码
+                    </div>
+                    <!--第八行 -->
+                    <!-- 1.文字，右对齐-->
+                    <div class="col-2 px-0 d-flex justify-content-end mb-2">
+                        <!--<span class="my_tip ">*</span>-->
+                        <!--<span class="my_small ">验证码：</span>-->
+                    </div>
+                    <!-- 2.表单-->
+                    <div class="col-4 px-0 mb-2 my_small">
+                        <span class="border">1234</span>
+                        <a href="">换张图</a>
+                    </div>
+                    <!--3.提示文字-->
+                    <div class="col-6 px-0 my_color pl-2">
+                        <!--请输入验证码-->
+                    </div>
+                    <!--第9行 -->
+                    <!-- 1.文字，右对齐-->
+                    <div class="col-2 px-0 d-flex justify-content-end mb-2">
+                        <!--<span class="my_tip ">*</span>-->
+                        <!--<span class="my_small ">验证码：</span>-->
+                    </div>
+                    <!-- 2.表单-->
+                    <div class="col-6 px-0 d-flex mb-2">
+                        <div class="my_small">
+                            <input id="tongyi" class="pt-2" type="checkbox" />
+                            <label for="tongyi">我已阅读并同意</label>
+                            <a href="">飞虎乐购用户协议</a>
+                        </div>
+                    </div>
+                    <!--3.提示文字-->
+                    <div class="col-4 px-0 my_color pl-2">
+                        <!--请输入验证码-->
+                    </div>
+                    <!--第10行 -->
+                    <!-- 1.文字，右对齐-->
+                    <div class="col-2 px-0 d-flex justify-content-end mb-2">
+                        <!--<span class="my_tip ">*</span>-->
+                        <!--<span class="my_small ">验证码：</span>-->
+                    </div>
+                    <!-- 2.表单-->
+                    <div class="col-6 px-0 d-flex mb-2">
+                        <!--<div class="">-->
+                        <btton class="btn btn-primary">提交注册</btton>
+                        <!--</div>-->
+                    </div>
+                    <!--3.提示文字-->
+                    <div class="col-4 px-0 my_color pl-2">
+                        <!--请输入验证码-->
                     </div>
                 </div>
-                <!--3.提示文字-->
-                <div class="col-4 px-0 my_color pl-2">
-                    <!--请输入验证码-->
-                </div>
-                <!--第10行 -->
-                <!-- 1.文字，右对齐-->
-                <div class="col-2 px-0 d-flex justify-content-end mb-2">
-                    <!--<span class="my_tip ">*</span>-->
-                    <!--<span class="my_small ">验证码：</span>-->
-                </div>
-                <!-- 2.表单-->
-                <div class="col-6 px-0 d-flex mb-2">
-                    <!--<div class="">-->
-                        <btton class="btn btn-primary">提交注册</btton>
-                    <!--</div>-->
-                </div>
-                <!--3.提示文字-->
-                <div class="col-4 px-0 my_color pl-2">
-                    <!--请输入验证码-->
-                </div>
-           </div>
-       </div>
+            </div>
+        </div>
+        <!-- 页尾-->
+        <footer id="footer"></footer>
     </div>
-    <!-- 页尾-->
-    <div>
-        <!-- 1-->
-        <div class="ml-0">
-            <ul class="breadcrumb mb-0 ">
-                <li class="breadcrumb-item my_breadcrumb-item"><a class="my_color" href="">常见问题</a></li>
-                <li class="breadcrumb-item my_breadcrumb-item"><a class="my_color" href="">法律说明</a></li>
-                <li class="breadcrumb-item my_breadcrumb-item"><a class="my_color" href="">联系客服</a></li>
-                <li class="breadcrumb-item my_breadcrumb-item"><a class="my_color" href="">新闻中心</a></li>
-                <li class="breadcrumb-item my_breadcrumb-item"><a class="my_color" href="">意见箱</a></li>
-            </ul>
-        </div>
-        <div class="ml-0">
-            <ul class="breadcrumb py-0">
-                <li class="breadcrumb-item">
-                    <span class="my_small">增值电信业务经营许可证：</span>
-                    <a class="my_small" href="">粤B2-20130551</a>
-                </li>
-                <li class="breadcrumb-item">
-                    <span class="my_small">网站备案：</span>
-                    <a class="my_small" href="">粤ICP备14036938号</a>
-                </li>
-            </ul>
-        </div>
-        <!-- 3-->
-        <div class="ml-0">
-            <ul class="breadcrumb py-0">
-                <li class="breadcrumb-item">
-                    <span class="my_small">食品流通许可证：</span>
-                    <a class="my_small" href="">SP4403112014007826</a>
-                </li>
-                <li class="breadcrumb-item">
-                    <span class="my_small">食品流通许可证：</span>
-                    <a class="my_small" href="">SP1103021110002595</a>
-                </li>
-                <li class="breadcrumb-item">
-                    <a class="my_small" href="">营业执照</a>
-                </li>
-            </ul>
-            <!-- 4-->
-            <p class="ml-3 my_small">Copyright © 2009-2019 深圳市理约云信息管理有限公司.All Rights Reserved </p>
-        </div>
-    </div>
-</div>
+    <!-- //引入页头文件 -->
+    <script src="./js/header.js"></script>
+    <script src="./js/footer.js"></script>
 </body>
+
 </html>

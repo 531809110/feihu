@@ -16,6 +16,7 @@
 </head>
 
 <body>
+
     <div class="container">
         <!-- 页头 -->
         <header id="header"></header>
@@ -95,7 +96,7 @@
             </div>
         </div>
         <!-- 页尾-->
-        <footer></footer>
+        <footer id="footer"></footer>
     </div>
 
     <script>
@@ -127,9 +128,15 @@
         //DOM获取提交按钮，发送AJAX请求到服务器
         var submit = document.getElementById("submit");
         submit.onclick = function () {
+            // 提交提示信息
+            var loginTip = document.getElementById("loginTip");
+            //0.用户名/密码非空验证，只要有一个不符合条件，均不提交ajax请求
+            if(!((/^[\w]{1,16}$/.test(uname.value))&&(/^[0-9a-zA-Z,./!@#$%]{6,8}$/.test(upwd.value)))){
+                loginTip.innerHTML = "用户名或密码格式不正确";
+                return;
+            }
             //1.创建异步对象
             var xhr = new XMLHttpRequest();
-
             //4.绑定监听，接收响应
             xhr.onreadystatechange = function () {
                 //onreadystatechange全程会调用4次
@@ -141,7 +148,7 @@
                     result = JSON.parse(result);
                     // console.log(result)
                     if (result.code == -1) {
-                        var loginTip = document.getElementById("loginTip");
+                        
                         loginTip.innerHTML = "用户名或密码错误"
                     } else if (result.code == 1) {
                         var obj = {};
@@ -167,7 +174,10 @@
             }
         }
     </script>
+
+    <!-- //引入页头文件 -->
     <script src="./js/header.js"></script>
+    <script src="./js/footer.js"></script>
 </body>
 
 </html>

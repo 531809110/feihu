@@ -2,16 +2,16 @@
 
 //第一部分，发送ajax请求header.html，返回HTML代码片段，写入header 标签中
     //1.创建异步对象
-    var xhr = new XMLHttpRequest();
+    var xhrHead = new XMLHttpRequest();
 
     //4.绑定监听，接收响应
-    xhr.onreadystatechange = function () {
+    xhrHead.onreadystatechange = function () {
       //onreadystatechange全程会调用4次
-      //我们关注xhr.readyState==4
+      //我们关注xhrHead.readyState==4
       //目的是，我们只要最后一次
-      if (xhr.readyState == 4 && xhr.status == 200) {
+      if (xhrHead.readyState == 4 && xhrHead.status == 200) {
         //接收响应
-        var result = xhr.responseText;
+        var result = xhrHead.responseText;
         // console.log(result);
         var header = document.getElementById("header")
         header.innerHTML = result;
@@ -49,9 +49,9 @@
     }
     //2.打开连接，创建请求
     var url = `header.html`
-    xhr.open("get", url, true);
+    xhrHead.open("get", url, true);
     //3.发送请求
-    xhr.send(null);
+    xhrHead.send(null);
 
 // 第三部分：创建link元素，引入CSS文件，并追加到head标签里
 var link = document.createElement("link");
