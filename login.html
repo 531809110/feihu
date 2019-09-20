@@ -15,43 +15,9 @@
 </head>
 <body>
 <div class="container">
-    <!-- 导航条左半部分，登陆注册链接 -->
-    <div class="row mx-0 my_bg justify-content-between">
-        <div class="col-8 px-0 my_small py-1">
-            <span>您好，欢迎来到飞虎乐购！</span>
-            <a href="login.html">安全登录</a>
-            <span> 还没加入我们？</span>
-            <a href="register.html">免费注册</a>
-        </div class="col-4 px-0">
-        <!-- 导航条右半部分，下拉菜单 -->
-        <div class="row mx-0">
-            <!-- 右边又分三个部分 -->
-            <div class="col-4 px-0">
-                <!-- 第一部分的下拉菜单 -->
-                <div data-toggle="dropdown" class="btn dropdown-toggle py-0 mb-1">
-                    <span class="my_small">我的账户</span>
-                    <ul class="dropdown-menu">
-                        <li class="mx-2"><a class="my_small" href="">账户首页</a></li>
-                        <li class="mx-2"><a class="my_small" href="">我的收藏</a></li>
-                        <li class="mx-2"><a class="my_small" href="">我的订单</a></li>
-                    </ul>
-                </div>
-                <!--<div class="dropdown-toggle">-->
-            </div>
-            <div class="col-4 px-0">
-
-                <div data-toggle="dropdown" class="btn dropdown-toggle py-0 mb-1">
-                    <span class="my_small">网站导航</span>
-                    <ul class="dropdown-menu mx-2">
-                        <li class="mx-2"><a class="my_small" href="">帮助中心</a></li>
-                        <li class="mx-2"><a class="my_small" href="">联系客服</a></li>
-                        <li class="mx-2"><a class="my_small" href="">常见问题</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-4 "><a class="my_small" href="">加入收藏</a></div>
-        </div>
-    </div>
+    <!-- 页头 -->
+    <header id="header"></header>
+    <!-- 主体部分 -->
     <!-- 背景图-->
     <div class="row register_bg mx-0">
         <!-- 注册框-->
@@ -100,10 +66,11 @@
                 <!-- 2.表单-->
                 <div class="col-4 px-0 mb-2 my_small">
                     <a href="">忘记密码</a>
+                    
                 </div>
                 <!--3.提示文字-->
                 <div class="col-6 px-0 my_color pl-2">
-                    <!--请输入验证码-->
+                    <span id="loginTip" style="color: red"></span>
                 </div>
 
                 <!--第10行 -->
@@ -126,48 +93,7 @@
        </div>
     </div>
     <!-- 页尾-->
-    <div>
-        <!-- 1-->
-        <div class="ml-0">
-            <ul class="breadcrumb mb-0 ">
-                <li class="breadcrumb-item my_breadcrumb-item"><a class="my_color" href="">常见问题</a></li>
-                <li class="breadcrumb-item my_breadcrumb-item"><a class="my_color" href="">法律说明</a></li>
-                <li class="breadcrumb-item my_breadcrumb-item"><a class="my_color" href="">联系客服</a></li>
-                <li class="breadcrumb-item my_breadcrumb-item"><a class="my_color" href="">新闻中心</a></li>
-                <li class="breadcrumb-item my_breadcrumb-item"><a class="my_color" href="">意见箱</a></li>
-            </ul>
-        </div>
-        <div class="ml-0">
-            <ul class="breadcrumb py-0">
-                <li class="breadcrumb-item">
-                    <span class="my_small">增值电信业务经营许可证：</span>
-                    <a class="my_small" href="">粤B2-20130551</a>
-                </li>
-                <li class="breadcrumb-item">
-                    <span class="my_small">网站备案：</span>
-                    <a class="my_small" href="">粤ICP备14036938号</a>
-                </li>
-            </ul>
-        </div>
-        <!-- 3-->
-        <div class="ml-0">
-            <ul class="breadcrumb py-0">
-                <li class="breadcrumb-item">
-                    <span class="my_small">食品流通许可证：</span>
-                    <a class="my_small" href="">SP4403112014007826</a>
-                </li>
-                <li class="breadcrumb-item">
-                    <span class="my_small">食品流通许可证：</span>
-                    <a class="my_small" href="">SP1103021110002595</a>
-                </li>
-                <li class="breadcrumb-item">
-                    <a class="my_small" href="">营业执照</a>
-                </li>
-            </ul>
-            <!-- 4-->
-            <p class="ml-3 my_small">Copyright © 2009-2019 深圳市理约云信息管理有限公司.All Rights Reserved </p>
-        </div>
-    </div>
+<footer></footer>
 </div>
 
 <script>
@@ -193,12 +119,40 @@ upwd.onfocus=function(){
 };
 // 密码框失去焦点时，定义正则表达式，检测输入内容是否符合格式要求
 upwd.onblur=function(){
-    upwdTip.innerHTML= (/^[0-9a-zA-Z,./!@#$%]{6,8}$/.test(uname.value)==true?"密码格式正确":"密码格式不正确");
+    upwdTip.innerHTML= (/^[0-9a-zA-Z,./!@#$%]{6,8}$/.test(upwd.value)==true?"密码格式正确":"密码格式不正确");
 };
 
 //DOM获取提交按钮，发送AJAX请求到服务器
 var submit=document.getElementById("submit");
+submit.onclick=function(){
+    //1.创建异步对象
+    var xhr=new XMLHttpRequest();
+				
+				//4.绑定监听，接收响应
+				xhr.onreadystatechange=function(){
+					//onreadystatechange全程会调用4次
+					//我们关注xhr.readyState==4
+					//目的是，我们只要最后一次
+					if(xhr.readyState==4&&xhr.status==200){
+						//接收响应
+                        var result=xhr.responseText;
+                        result=JSON.parse(result);
+                        console.log(result)
+                        if(result.code==-1){
+                            var loginTip=document.getElementById("loginTip");
+                            loginTip.innerHTML="用户名或密码错误"
+                        }else if(result.code==1){
+                            window.location.href="index.html"
+                        }
+					}
+				}
+                //2.打开连接，创建请求
+                var url=`http://127.0.0.1:8080/login?uname=${uname.value}&upwd=${upwd.value}`
+				xhr.open("get",url,true);
+				//3.发送请求
+				xhr.send(null);
+}
 </script>
-
+<script src="./js/header.js"></script>
 </body>
 </html>

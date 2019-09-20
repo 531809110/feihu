@@ -1,32 +1,13 @@
-<!DOCTYPE html>
-<html>
-<head lang="en">
-    <meta charset="UTF-8">
-    <title></title>
-    <meta name="viewport" content="width=device-width,initial-scale=1.0,maxmum-scale=1.0,user-scalable=0">
-    <link rel="stylesheet" href="css/bootstrap.css"/>
-    <link rel="stylesheet" href="css/comm.css"/>
-    <link rel="stylesheet" href="css/header.css"/>
-    <link rel="stylesheet" href="css/register.css"/>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <base target="_blank"/>
-    <style>
-
-    </style>
-</head>
-<body>
-<div class="container">
+<div class="row mx-0 my_bg justify-content-between">
     <!-- 导航条左半部分，登陆注册链接 -->
-    <div class="row mx-0 my_bg justify-content-between">
-        <div class="col-8 px-0 my_small py-1">
-            <span>您好，欢迎来到飞虎乐购！</span>
-            <a href="login.html">安全登录</a>
-            <span> 还没加入我们？</span>
-            <a href="register.html">免费注册</a>
-        </div class="col-4 px-0">
-        <!-- 导航条右半部分，下拉菜单 -->
+    <div class="col-8 px-0 my_small py-1" id="username">
+        <span>您好，欢迎来到飞虎乐购！</span>
+        <a href="login.html">安全登录</a>
+        <span> 还没加入我们？</span>
+        <a href="register.html">免费注册</a>
+    </div>
+    <!-- 导航条右半部分，下拉菜单 -->
+    <div class="col-4 px-0">
         <div class="row mx-0">
             <!-- 右边又分三个部分 -->
             <div class="col-4 px-0">
@@ -42,35 +23,29 @@
                 <!--<div class="dropdown-toggle">-->
             </div>
             <div class="col-4 px-0">
-                
+
                 <div data-toggle="dropdown" class="btn dropdown-toggle py-0 mb-1">
-                        <span class="my_small">网站导航</span>
-                        <ul class="dropdown-menu mx-2">
-                            <li class="mx-2"><a class="my_small" href="">帮助中心</a></li>
-                            <li class="mx-2"><a class="my_small" href="">联系客服</a></li>
-                            <li class="mx-2"><a class="my_small" href="">常见问题</a></li>
-                        </ul>
-                    </div>
+                    <span class="my_small">网站导航</span>
+                    <ul class="dropdown-menu mx-2">
+                        <li class="mx-2"><a class="my_small" href="">帮助中心</a></li>
+                        <li class="mx-2"><a class="my_small" href="">联系客服</a></li>
+                        <li class="mx-2"><a class="my_small" href="">常见问题</a></li>
+                    </ul>
+                </div>
             </div>
             <div class="col-4 "><a class="my_small" href="">加入收藏</a></div>
         </div>
     </div>
-    <!-- 飞虎图片及搜索框-->
-    <div>
-        <div class="row mx-0">
-            <!-- 图片-->
-            <div class="col-4 px-0 mr-0">
-                <img src="image/logo.png" alt=""/>
-            </div>
-            <!-- 搜索框和按钮-->
-            <div class="col-5 px-0 form-inline">
-                <input class="w-75 form-control border-warning h-30" type="text"/>
-                <button class="btn bg-warning" >搜索</button>
-            </div>
-        </div>
-     </div>
-     <script>
-     
-     </script>
-</body>
-</html>
+</div>
+<!-- 飞虎图片及搜索框-->
+<div class="row mx-0">
+    <!-- 图片-->
+    <div class="col-4 px-0 mr-0">
+        <img src="image/logo.png" alt="" />
+    </div>
+    <!-- 搜索框和按钮-->
+    <div class="col-5 px-0 form-inline">
+        <input class="w-75 form-control border-warning h-30" type="text" />
+        <button class="btn bg-warning">搜索</button>
+    </div>
+</div>
