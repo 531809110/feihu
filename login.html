@@ -1,164 +1,173 @@
 <!DOCTYPE html>
 <html>
+
 <head lang="en">
     <meta charset="UTF-8">
     <title></title>
     <meta name="viewport" content="width=device-width,initial-scale=1.0,maxmum-scale=1.0,user-scalable=0">
-    <link rel="stylesheet" href="css/bootstrap.css"/>
-    <link rel="stylesheet" href="css/comm.css"/>
-    <link rel="stylesheet" href="css/header.css"/>
-    <link rel="stylesheet" href="css/footer.css"/>
-    <link rel="stylesheet" href="css/register.css"/>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/comm.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/register.css" />
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 </head>
+
 <body>
-<div class="container">
-    <!-- 页头 -->
-    <header id="header"></header>
-    <!-- 主体部分 -->
-    <!-- 背景图-->
-    <div class="row register_bg mx-0">
-        <!-- 注册框-->
-       <div class="col-6 px-0 offset-5 border border-warning pl-3 bg-white my-5">
-            <div class="my_big py-2">用户登录</div>
-            <div>
-                <span class="my_small border py-2">欢迎您登录飞虎乐购，享受您的购物之旅。</span>
-            </div>
-           <!-- 注册的明细，分左中右三部分-->
-            <div class="row mx-0 my-3">
-                <!-- 第一行-->
-                <!-- 1.文字，右对齐-->
-                <div class="col-2 px-0 d-flex justify-content-end mb-2">
-                    <span class="my_tip ">*</span>
-                    <span class="my_small ">用户名：</span>
+    <div class="container">
+        <!-- 页头 -->
+        <header id="header"></header>
+        <!-- 主体部分 -->
+        <!-- 背景图-->
+        <div class="row register_bg mx-0">
+            <!-- 注册框-->
+            <div class="col-6 px-0 offset-5 border border-warning pl-3 bg-white my-5">
+                <div class="my_big py-2">用户登录</div>
+                <div>
+                    <span class="my_small border py-2">欢迎您登录飞虎乐购，享受您的购物之旅。</span>
                 </div>
-                <!-- 2.表单-->
-                <div class="col-4 px-0">
-                    <input class="form-control " type="text"/ id="uname">
-                </div>
-                <!-- 3.提示文字-->
-                <div class="col-6 px-0 my_color pl-2 " id="unameTip">
-                    
-                </div>
-            <!--第二行 -->
-               <!-- 1.文字，右对齐-->
-               <div class="col-2 px-0 d-flex justify-content-end mb-2 ">
-                   <span class="my_tip ">*</span>
-                   <span class="my_small ">密码：</span>
-               </div>
-               <!-- 2.表单-->
-               <div class="col-4 px-0">
-                   <input class="form-control " type="password"/ id="upwd">
-               </div>
-               <!-- 3.提示文字-->
-               <div class="col-6 px-0 my_color pl-2 " id="upwdTip">
-                   
-               </div>
+                <!-- 注册的明细，分左中右三部分-->
+                <div class="row mx-0 my-3">
+                    <!-- 第一行-->
+                    <!-- 1.文字，右对齐-->
+                    <div class="col-2 px-0 d-flex justify-content-end mb-2">
+                        <span class="my_tip ">*</span>
+                        <span class="my_small ">用户名：</span>
+                    </div>
+                    <!-- 2.表单-->
+                    <div class="col-4 px-0">
+                        <input class="form-control " type="text"/ id="uname">
+                    </div>
+                    <!-- 3.提示文字-->
+                    <div class="col-6 px-0 my_color pl-2 " id="unameTip">
 
-                <!--第八行 -->
-                <!-- 1.文字，右对齐-->
-                <div class="col-2 px-0 d-flex justify-content-end mb-2">
-                    <!--<span class="my_tip ">*</span>-->
-                    <!--<span class="my_small ">验证码：</span>-->
-                </div>
-                <!-- 2.表单-->
-                <div class="col-4 px-0 mb-2 my_small">
-                    <a href="">忘记密码</a>
-                    
-                </div>
-                <!--3.提示文字-->
-                <div class="col-6 px-0 my_color pl-2">
-                    <span id="loginTip" style="color: red"></span>
-                </div>
+                    </div>
+                    <!--第二行 -->
+                    <!-- 1.文字，右对齐-->
+                    <div class="col-2 px-0 d-flex justify-content-end mb-2 ">
+                        <span class="my_tip ">*</span>
+                        <span class="my_small ">密码：</span>
+                    </div>
+                    <!-- 2.表单-->
+                    <div class="col-4 px-0">
+                        <input class="form-control " type="password"/ id="upwd">
+                    </div>
+                    <!-- 3.提示文字-->
+                    <div class="col-6 px-0 my_color pl-2 " id="upwdTip">
 
-                <!--第10行 -->
-                <!-- 1.文字，右对齐-->
-                <div class="col-2 px-0 d-flex justify-content-end mb-2">
-                    <!--<span class="my_tip ">*</span>-->
-                    <!--<span class="my_small ">验证码：</span>-->
-                </div>
-                <!-- 2.表单-->
-                <div class="col-6 px-0 d-flex mb-2">
-                    <!--<div class="">-->
+                    </div>
+
+                    <!--第八行 -->
+                    <!-- 1.文字，右对齐-->
+                    <div class="col-2 px-0 d-flex justify-content-end mb-2">
+                        <!--<span class="my_tip ">*</span>-->
+                        <!--<span class="my_small ">验证码：</span>-->
+                    </div>
+                    <!-- 2.表单-->
+                    <div class="col-4 px-0 mb-2 my_small">
+                        <a href="">忘记密码</a>
+
+                    </div>
+                    <!--3.提示文字-->
+                    <div class="col-6 px-0 my_color pl-2">
+                        <span id="loginTip" style="color: red"></span>
+                    </div>
+
+                    <!--第10行 -->
+                    <!-- 1.文字，右对齐-->
+                    <div class="col-2 px-0 d-flex justify-content-end mb-2">
+                        <!--<span class="my_tip ">*</span>-->
+                        <!--<span class="my_small ">验证码：</span>-->
+                    </div>
+                    <!-- 2.表单-->
+                    <div class="col-6 px-0 d-flex mb-2">
+                        <!--<div class="">-->
                         <button class="btn btn-primary" id="submit">提交登录</button>
-                    <!--</div>-->
+                        <!--</div>-->
+                    </div>
+                    <!--3.提示文字-->
+                    <div class="col-4 px-0 my_color pl-2">
+                        <!--请输入验证码-->
+                    </div>
                 </div>
-                <!--3.提示文字-->
-                <div class="col-4 px-0 my_color pl-2">
-                    <!--请输入验证码-->
-                </div>
-           </div>
-       </div>
+            </div>
+        </div>
+        <!-- 页尾-->
+        <footer></footer>
     </div>
-    <!-- 页尾-->
-<footer></footer>
-</div>
 
-<script>
-//DOM获取用户名输入框，用户名检测提示框
-var uname=document.getElementById("uname");
-var unameTip=document.getElementById("unameTip");
-//DOM获取密码输入框，密码检测提示框
-var upwd=document.getElementById("upwd");
-var upwdTip=document.getElementById("upwdTip");
-// 用户名框获取焦点时，提示用户名格式
-uname.onfocus=function(){
-    unameTip.innerHTML="用户名可包含_字母和数字";
-};
-// 用户名框失去焦点时，定义正则表达式，检测输入内容是否符合格式要求
-uname.onblur=function(){
-    unameTip.innerHTML= (/^[\w]{1,16}$/.test(uname.value)==true?"用户名格式正确":"用户名格式不正确");
-};
+    <script>
+        //DOM获取用户名输入框，用户名检测提示框
+        var uname = document.getElementById("uname");
+        var unameTip = document.getElementById("unameTip");
+        //DOM获取密码输入框，密码检测提示框
+        var upwd = document.getElementById("upwd");
+        var upwdTip = document.getElementById("upwdTip");
+        // 用户名框获取焦点时，提示用户名格式
+        uname.onfocus = function () {
+            unameTip.innerHTML = "用户名可包含_字母和数字";
+        };
+        // 用户名框失去焦点时，定义正则表达式，检测输入内容是否符合格式要求
+        uname.onblur = function () {
+            unameTip.innerHTML = (/^[\w]{1,16}$/.test(uname.value) == true ? "用户名格式正确" : "用户名格式不正确");
+        };
 
 
-// 用户名框获取焦点时，提示密码格式
-upwd.onfocus=function(){
-    upwdTip.innerHTML="请输入6-8位密码";
-};
-// 密码框失去焦点时，定义正则表达式，检测输入内容是否符合格式要求
-upwd.onblur=function(){
-    upwdTip.innerHTML= (/^[0-9a-zA-Z,./!@#$%]{6,8}$/.test(upwd.value)==true?"密码格式正确":"密码格式不正确");
-};
+        // 用户名框获取焦点时，提示密码格式
+        upwd.onfocus = function () {
+            upwdTip.innerHTML = "请输入6-8位密码";
+        };
+        // 密码框失去焦点时，定义正则表达式，检测输入内容是否符合格式要求
+        upwd.onblur = function () {
+            upwdTip.innerHTML = (/^[0-9a-zA-Z,./!@#$%]{6,8}$/.test(upwd.value) == true ? "密码格式正确" : "密码格式不正确");
+        };
 
-//DOM获取提交按钮，发送AJAX请求到服务器
-var submit=document.getElementById("submit");
-submit.onclick=function(){
-    //1.创建异步对象
-    var xhr=new XMLHttpRequest();
-				
-				//4.绑定监听，接收响应
-				xhr.onreadystatechange=function(){
-					//onreadystatechange全程会调用4次
-					//我们关注xhr.readyState==4
-					//目的是，我们只要最后一次
-					if(xhr.readyState==4&&xhr.status==200){
-						//接收响应
-                        var result=xhr.responseText;
-                        result=JSON.parse(result);
-                        // console.log(result)
-                        if(result.code==-1){
-                            var loginTip=document.getElementById("loginTip");
-                            loginTip.innerHTML="用户名或密码错误"
-                        }else if(result.code==1){
-                            var obj={};
-                            obj.uname=uname.value;  //保存用户名到obj中
-                            obj.time=3600*1000;  //设置过期时间为登录后一个小时,临时设为20s,测试
-                            obj.date=new Date().getTime();  //获取现在时间
-                            var objString=JSON.stringify(obj); //把obj转换成JSON字符串，才能放入localStorage
-                            window.localStorage.setItem("data",objString);  //将uname相关信息放入localStorage,属性名为data
-                            window.location.href="index.html"  //跳转到首页
-                        }
-					}
-				}
-                //2.打开连接，创建请求
-                var url=`http://127.0.0.1:8080/login?uname=${uname.value}&upwd=${upwd.value}`
-				xhr.open("get",url,true);
-				//3.发送请求
-				xhr.send(null);
-}
-</script>
-<script src="./js/header.js"></script>
+        //DOM获取提交按钮，发送AJAX请求到服务器
+        var submit = document.getElementById("submit");
+        submit.onclick = function () {
+            //1.创建异步对象
+            var xhr = new XMLHttpRequest();
+
+            //4.绑定监听，接收响应
+            xhr.onreadystatechange = function () {
+                //onreadystatechange全程会调用4次
+                //我们关注xhr.readyState==4
+                //目的是，我们只要最后一次
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    //接收响应
+                    var result = xhr.responseText;
+                    result = JSON.parse(result);
+                    // console.log(result)
+                    if (result.code == -1) {
+                        var loginTip = document.getElementById("loginTip");
+                        loginTip.innerHTML = "用户名或密码错误"
+                    } else if (result.code == 1) {
+                        var obj = {};
+                        obj.uname = uname.value; //保存用户名到obj中
+                        obj.time = 3600 * 1000; //设置过期时间为登录后一个小时,临时设为20s,测试
+                        obj.date = new Date().getTime(); //获取现在时间
+                        var objString = JSON.stringify(obj); //把obj转换成JSON字符串，才能放入localStorage
+                        window.localStorage.setItem("data", objString); //将uname相关信息放入localStorage,属性名为data
+                        window.location.href = "index.html" //跳转到首页
+                    }
+                }
+            }
+            //2.打开连接，创建请求
+            var url = `http://127.0.0.1:8080/login?uname=${uname.value}&upwd=${upwd.value}`
+            xhr.open("get", url, true);
+            //3.发送请求
+            xhr.send(null);
+        }
+        //按下回车键，同样执行提交，等效于按下submit按钮
+        document.onkeyup = function (e) {
+            if (e.keyCode == 13) {
+                submit.onclick();
+            }
+        }
+    </script>
+    <script src="./js/header.js"></script>
 </body>
+
 </html>
