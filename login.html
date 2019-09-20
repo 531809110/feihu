@@ -108,7 +108,7 @@
         var upwdTip = document.getElementById("upwdTip");
         // 用户名框获取焦点时，提示用户名格式
         uname.onfocus = function () {
-            unameTip.innerHTML = "用户名可包含_字母和数字";
+            unameTip.innerHTML = "用户名可包含(1`16位)_字母和数字";
         };
         // 用户名框失去焦点时，定义正则表达式，检测输入内容是否符合格式要求
         uname.onblur = function () {

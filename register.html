@@ -39,11 +39,11 @@
                     </div>
                     <!-- 2.表单-->
                     <div class="col-4 px-0">
-                        <input class="form-control " type="text" />
+                        <input class="form-control " type="text" / id="uname">
                     </div>
                     <!-- 3.提示文字-->
-                    <div class="col-6 px-0 my_color pl-2 ">
-                        用户名可包含_字母和数字
+                    <div class="col-6 px-0 my_color pl-2 " id="unameTip">
+                        
                     </div>
                     <!--第二行 -->
                     <!-- 1.文字，右对齐-->
@@ -53,25 +53,25 @@
                     </div>
                     <!-- 2.表单-->
                     <div class="col-4 px-0">
-                        <input class="form-control " type="password" />
+                        <input class="form-control " type="password" / id="upwd">
                     </div>
                     <!-- 3.提示文字-->
-                    <div class="col-6 px-0 my_color pl-2 ">
-                        请输入6-8位密码
+                    <div class="col-6 px-0 my_color pl-2 " id="upwdTip">
+                        
                     </div>
                     <!--第三行 -->
                     <!-- 1.文字，右对齐-->
-                    <div class="col-2 px-0 d-flex justify-content-end mb-2 ">
+                    <div class="col-2 px-0 d-flex justify-content-end mb-2 " >
                         <span class="my_tip ">*</span>
                         <span class="my_small ">确认密码：</span>
                     </div>
                     <!-- 2.表单-->
                     <div class="col-4 px-0">
-                        <input class="form-control " type="password" />
+                        <input class="form-control " type="password" / id="upwd2">
                     </div>
                     <!-- 3.提示文字-->
-                    <div class="col-6 px-0 my_color pl-2">
-                        请输入6-8位密码
+                    <div class="col-6 px-0 my_color pl-2" id="upwdTip2">
+                        
                     </div>
                     <!--第四行 -->
                     <!-- 1.文字，右对齐-->
@@ -81,11 +81,11 @@
                     </div>
                     <!-- 2.表单-->
                     <div class="col-4 px-0">
-                        <input class="form-control " type="email" />
+                        <input class="form-control " type="email" / id="email">
                     </div>
                     <!-- 3.提示文字-->
-                    <div class="col-6 px-0 my_color pl-2">
-                        请输入邮箱
+                    <div class="col-6 px-0 my_color pl-2" id="emailTip">
+                        
                     </div>
                     <!--第五行 -->
                     <!-- 1.文字，右对齐-->
@@ -95,26 +95,26 @@
                     </div>
                     <!-- 2.表单-->
                     <div class="col-4 px-0">
-                        <input class="form-control " type="text" />
+                        <input class="form-control " type="text" / id="tuijianren">
                     </div>
                     <!--3.提示文字-->
-                    <div class="col-6 px-0 my_color pl-2">
-                        请输入推荐人工号
+                    <div class="col-6 px-0 my_color pl-2" id="tuijianrenTip">
+                        
                     </div>
                     <!--第六行 -->
                     <!-- 1.文字，右对齐-->
-                    <div class="col-2 px-0 d-flex justify-content-end mb-2">
+                    <!-- <div class="col-2 px-0 d-flex justify-content-end mb-2"> -->
                         <!--<span class="my_tip ">*</span>-->
-                        <span class="my_small ">活动代码：</span>
-                    </div>
+                        <!-- <span class="my_small ">活动代码：</span>
+                    </div> -->
                     <!-- 2.表单-->
-                    <div class="col-4 px-0">
-                        <input class="form-control " type="text" />
-                    </div>
+                    <!-- <div class="col-4 px-0">
+                        <input class="form-control " type="text" / id="code">
+                    </div> -->
                     <!--3.提示文字-->
-                    <div class="col-6 px-0 my_color pl-2">
+                    <!-- <div class="col-6 px-0 my_color pl-2" id="codeTip">
                         请输入活动代码
-                    </div>
+                    </div> -->
                     <!--第七行 -->
                     <!-- 1.文字，右对齐-->
                     <div class="col-2 px-0 d-flex justify-content-end mb-2">
@@ -123,11 +123,11 @@
                     </div>
                     <!-- 2.表单-->
                     <div class="col-4 px-0">
-                        <input class="form-control " type="text" />
+                        <input class="form-control " type="text" / id="yanzhengma">
                     </div>
                     <!--3.提示文字-->
-                    <div class="col-6 px-0 my_color pl-2">
-                        请输入验证码
+                    <div class="col-6 px-0 my_color pl-2" id="yanzhengmaTip">
+                        
                     </div>
                     <!--第八行 -->
                     <!-- 1.文字，右对齐-->
@@ -137,8 +137,8 @@
                     </div>
                     <!-- 2.表单-->
                     <div class="col-4 px-0 mb-2 my_small">
-                        <span class="border">1234</span>
-                        <a href="">换张图</a>
+                        <span class="border" id="yanzhengmaContent"></span>
+                        <a href="javascript:;" id="yanzhengmaF5">换张图</a>
                     </div>
                     <!--3.提示文字-->
                     <div class="col-6 px-0 my_color pl-2">
@@ -171,7 +171,7 @@
                     <!-- 2.表单-->
                     <div class="col-6 px-0 d-flex mb-2">
                         <!--<div class="">-->
-                        <btton class="btn btn-primary">提交注册</btton>
+                        <btton class="btn btn-primary" id="submit">提交注册</btton>
                         <!--</div>-->
                     </div>
                     <!--3.提示文字-->
@@ -184,6 +184,82 @@
         <!-- 页尾-->
         <footer id="footer"></footer>
     </div>
+
+<script>
+    //DOM获取全部表单元素
+var uname=document.getElementById("uname");
+var upwd=document.getElementById("upwd");
+var upwd2=document.getElementById("upwd2");
+var email=document.getElementById("email");
+var tuijianren=document.getElementById("tuijianren");
+// var code=document.getElementById("code");
+var yanzhengma=document.getElementById("yanzhengma");
+var tongyi=document.getElementById("tongyi");
+var submit=document.getElementById("submit");
+
+//DOM获取前面7个表单元素右边的提示元素
+var unameTip=document.getElementById("unameTip");
+var upwdTip=document.getElementById("upwdTip");
+var upwdTip2=document.getElementById("upwdTip2");
+var emailTip=document.getElementById("emailTip");
+var tuijianrenTip=document.getElementById("tuijianrenTip");
+// var codeTip=document.getElementById("codeTip");
+var yanzhengmaTip=document.getElementById("yanzhengmaTip");
+
+//DOM获取随机验证码元素
+var yanzhengmaContent=document.getElementById("yanzhengmaContent");
+yanzhengmaContent.innerHTML=String(parseInt(Math.random()*10))+String(parseInt(Math.random()*10))+String(parseInt(Math.random()*10))+String(parseInt(Math.random()*10))
+//DOM获取刷新随机验证码a标签
+var yanzhengmaF5=document.getElementById("yanzhengmaF5");
+yanzhengmaF5.onclick=function(){
+yanzhengmaContent.innerHTML=String(parseInt(Math.random()*10))+String(parseInt(Math.random()*10))+String(parseInt(Math.random()*10))+String(parseInt(Math.random()*10))
+}
+//前面7个表单元素获得焦点时，提示输入格式，失去焦点时，检查格式是否正确
+//uname
+uname.onfocus=function(){
+    unameTip.innerHTML="用户名可包含(1`16位)_字母和数字";
+}
+uname.onblur=function(){
+    unameTip.innerHTML = /^[\w]{1,16}$/.test(uname.value) == true ? "用户名格式正确" : "用户名格式不正确";
+}
+//upwd
+upwd.onfocus=function(){
+    upwdTip.innerHTML="请输入6-8位密码";
+}
+upwd.onblur=function(){
+    upwdTip.innerHTML = (/^[0-9a-zA-Z,./!@#$%]{6,8}$/.test(upwd.value)&&upwd.value!="") == true ? "密码格式正确" : "密码格式不正确";
+}
+//upwd2
+upwd2.onfocus=function(){
+    upwdTip2.innerHTML="请输入6-8位密码";
+}
+upwd2.onblur=function(){
+    upwdTip2.innerHTML = (upwd.value ==upwd2.value&&upwd2.value!="") ? "密码格式正确" : "密码不一致";
+}
+//email
+email.onfocus=function(){
+    emailTip.innerHTML="请输入邮箱";
+}
+email.onblur=function(){
+    emailTip.innerHTML = /^[A-Za-z0-9]+@[a-zA-Z0-9]+(\.[a-zA-Z]+)+$/.test(email.value) == true ? "邮箱格式正确" : "邮箱格式不正确";
+}
+//tuijianren
+tuijianren.onfocus=function(){
+    tuijianrenTip.innerHTML="请输入推荐人工号";
+}
+tuijianren.onblur=function(){
+    tuijianrenTip.innerHTML = /^\d{8}$/.test(tuijianren.value) == true ? "推荐人工号格式正确" : "推荐人工号格式不正确";
+}
+//yanzhengma
+yanzhengma.onfocus=function(){
+    yanzhengmaTip.innerHTML="请输入验证码";
+}
+yanzhengma.onblur=function(){
+    yanzhengmaTip.innerHTML = yanzhengma.value==yanzhengmaContent.innerHTML ? "验证码正确" : "验证码不正确";
+}
+
+</script>
+
     <!-- //引入页头文件 -->
     <script src="./js/header.js"></script>
     <script src="./js/footer.js"></script>

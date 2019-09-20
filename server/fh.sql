@@ -16,8 +16,8 @@ CREATE TABLE fh_user(
   --  #用户手机号
   avatar VARCHAR(128),       
   --  #头像图片路径
-  user_name VARCHAR(32),     
-  --  #用户名，如王小明
+  tuijianID INT,     
+  --  #推荐人工号
   gender INT                  
   -- #性别  0-女  1-男
 );
@@ -69,10 +69,10 @@ INSERT INTO fh_cart VALUES
 
 /**用户信息**/
 INSERT INTO fh_user VALUES
-(NULL, 'dingding', md5('123456'), 'ding@qq.com', '13501234567', 'img/user/default.png', '丁伟', '1'),
-(NULL, 'dangdang', md5('123456'), 'dang@qq.com', '13501234568', 'img/user/default.png', '林当', '1'),
-(NULL, 'doudou', md5('123456'), 'dou@qq.com', '13501234569', 'img/user/default.png', '窦志强', '1'),
-(NULL, 'yaya', md5('123456'), 'ya@qq.com', '13501234560', 'img/user/default.png', '秦小雅', '0');
+(NULL, 'dingding', md5('123456'), 'ding@qq.com', '13501234567', 'img/user/default.png', '11111111', '1'),
+(NULL, 'dangdang', md5('123456'), 'dang@qq.com', '13501234568', 'img/user/default.png', '22222222', '1'),
+(NULL, 'doudou', md5('123456'), 'dou@qq.com', '13501234569', 'img/user/default.png', '33333333', '1'),
+(NULL, 'yaya', md5('123456'), 'ya@qq.com', '13501234560', 'img/user/default.png', '44444444', '0');
 
 /**餐品信息**/
 INSERT INTO fh_product VALUES
