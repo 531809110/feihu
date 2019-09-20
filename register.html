@@ -39,11 +39,11 @@
                     </div>
                     <!-- 2.表单-->
                     <div class="col-4 px-0">
-                        <input class="form-control " type="text" />
+                        <input class="form-control " type="text" / id="uname">
                     </div>
                     <!-- 3.提示文字-->
-                    <div class="col-6 px-0 my_color pl-2 ">
-                        用户名可包含_字母和数字
+                    <div class="col-6 px-0 my_color pl-2 " id="unameTip">
+
                     </div>
                     <!--第二行 -->
                     <!-- 1.文字，右对齐-->
@@ -53,11 +53,11 @@
                     </div>
                     <!-- 2.表单-->
                     <div class="col-4 px-0">
-                        <input class="form-control " type="password" />
+                        <input class="form-control " type="password" / id="upwd">
                     </div>
                     <!-- 3.提示文字-->
-                    <div class="col-6 px-0 my_color pl-2 ">
-                        请输入6-8位密码
+                    <div class="col-6 px-0 my_color pl-2 " id="upwdTip">
+
                     </div>
                     <!--第三行 -->
                     <!-- 1.文字，右对齐-->
@@ -67,11 +67,11 @@
                     </div>
                     <!-- 2.表单-->
                     <div class="col-4 px-0">
-                        <input class="form-control " type="password" />
+                        <input class="form-control " type="password" / id="upwd2">
                     </div>
                     <!-- 3.提示文字-->
-                    <div class="col-6 px-0 my_color pl-2">
-                        请输入6-8位密码
+                    <div class="col-6 px-0 my_color pl-2" id="upwdTip2">
+
                     </div>
                     <!--第四行 -->
                     <!-- 1.文字，右对齐-->
@@ -81,11 +81,11 @@
                     </div>
                     <!-- 2.表单-->
                     <div class="col-4 px-0">
-                        <input class="form-control " type="email" />
+                        <input class="form-control " type="email" / id="email">
                     </div>
                     <!-- 3.提示文字-->
-                    <div class="col-6 px-0 my_color pl-2">
-                        请输入邮箱
+                    <div class="col-6 px-0 my_color pl-2" id="emailTip">
+
                     </div>
                     <!--第五行 -->
                     <!-- 1.文字，右对齐-->
@@ -95,25 +95,25 @@
                     </div>
                     <!-- 2.表单-->
                     <div class="col-4 px-0">
-                        <input class="form-control " type="text" />
+                        <input class="form-control " type="text" / id="tuijianren">
                     </div>
                     <!--3.提示文字-->
-                    <div class="col-6 px-0 my_color pl-2">
-                        请输入推荐人工号
+                    <div class="col-6 px-0 my_color pl-2" id="tuijianrenTip">
+
                     </div>
                     <!--第六行 -->
                     <!-- 1.文字，右对齐-->
                     <div class="col-2 px-0 d-flex justify-content-end mb-2">
-                        <!--<span class="my_tip ">*</span>-->
-                        <span class="my_small ">活动代码：</span>
+                        <span class="my_tip ">*</span>
+                        <span class="my_small ">手机：</span>
                     </div>
                     <!-- 2.表单-->
                     <div class="col-4 px-0">
-                        <input class="form-control " type="text" />
+                        <input class="form-control " type="text" / id="tele">
                     </div>
                     <!--3.提示文字-->
-                    <div class="col-6 px-0 my_color pl-2">
-                        请输入活动代码
+                    <div class="col-6 px-0 my_color pl-2" id="teleTip">
+
                     </div>
                     <!--第七行 -->
                     <!-- 1.文字，右对齐-->
@@ -123,12 +123,13 @@
                     </div>
                     <!-- 2.表单-->
                     <div class="col-4 px-0">
-                        <input class="form-control " type="text" />
+                        <input class="form-control " type="text" / id="yanzhengma">
                     </div>
                     <!--3.提示文字-->
-                    <div class="col-6 px-0 my_color pl-2">
-                        请输入验证码
+                    <div class="col-6 px-0 my_color pl-2" id="yanzhengmaTip">
+
                     </div>
+
                     <!--第八行 -->
                     <!-- 1.文字，右对齐-->
                     <div class="col-2 px-0 d-flex justify-content-end mb-2">
@@ -137,12 +138,28 @@
                     </div>
                     <!-- 2.表单-->
                     <div class="col-4 px-0 mb-2 my_small">
-                        <span class="border">1234</span>
-                        <a href="">换张图</a>
+                        <span class="border" id="yanzhengmaContent"></span>
+                        <a href="javascript:;" id="yanzhengmaF5">换张图</a>
                     </div>
                     <!--3.提示文字-->
                     <div class="col-6 px-0 my_color pl-2">
                         <!--请输入验证码-->
+                    </div>
+                    <!--新插入行 -->
+                    <!-- 1.文字，右对齐-->
+                    <div class="col-2 px-0 d-flex justify-content-end mb-2">
+                        <span class="my_tip ">*</span>
+                        <span class="my_small ">性别：</span>
+                    </div>
+                    <!-- 2.表单-->
+                    <div class="col-4 px-0">
+                        <label class="my_small mb-0 " style="vertical-align: top;"><input type="radio" name="sex"
+                                id="m">男</label>
+                        <label class="my_small mb-0 " style="vertical-align: top;"><input type="radio" name="sex"
+                                id="f">女</label>
+                    </div>
+                    <!--3.提示文字-->
+                    <div class="col-6 px-0 my_color pl-2" id="">
                     </div>
                     <!--第9行 -->
                     <!-- 1.文字，右对齐-->
@@ -171,11 +188,11 @@
                     <!-- 2.表单-->
                     <div class="col-6 px-0 d-flex mb-2">
                         <!--<div class="">-->
-                        <btton class="btn btn-primary">提交注册</btton>
+                        <btton class="btn btn-primary" id="regSubmit">提交注册</btton>
                         <!--</div>-->
                     </div>
                     <!--3.提示文字-->
-                    <div class="col-4 px-0 my_color pl-2">
+                    <div class="col-4 px-0 my_color pl-2" id="loginTip">
                         <!--请输入验证码-->
                     </div>
                 </div>
@@ -184,6 +201,165 @@
         <!-- 页尾-->
         <footer id="footer"></footer>
     </div>
+
+    <script>
+        //DOM获取全部表单元素
+        var uname = document.getElementById("uname");
+        var upwd = document.getElementById("upwd");
+        var upwd2 = document.getElementById("upwd2");
+        var email = document.getElementById("email");
+        var tuijianren = document.getElementById("tuijianren");
+        var tele = document.getElementById("tele");
+        var yanzhengma = document.getElementById("yanzhengma");
+        var tongyi = document.getElementById("tongyi");
+        var gender = document.getElementById("gender");
+
+        //DOM获取前面7个表单元素右边的提示元素
+        var unameTip = document.getElementById("unameTip");
+        var upwdTip = document.getElementById("upwdTip");
+        var upwdTip2 = document.getElementById("upwdTip2");
+        var emailTip = document.getElementById("emailTip");
+        var tuijianrenTip = document.getElementById("tuijianrenTip");
+        var teleTip = document.getElementById("teleTip");
+        var yanzhengmaTip = document.getElementById("yanzhengmaTip");
+
+        //DOM获取随机验证码元素
+        var yanzhengmaContent = document.getElementById("yanzhengmaContent");
+        yanzhengmaContent.innerHTML = String(parseInt(Math.random() * 10)) + String(parseInt(Math.random() * 10)) +
+            String(parseInt(Math.random() * 10)) + String(parseInt(Math.random() * 10))
+        //DOM获取刷新随机验证码a标签
+        var yanzhengmaF5 = document.getElementById("yanzhengmaF5");
+        yanzhengmaF5.onclick = function () {
+            yanzhengmaContent.innerHTML = String(parseInt(Math.random() * 10)) + String(parseInt(Math.random() *
+                10)) + String(parseInt(Math.random() * 10)) + String(parseInt(Math.random() * 10))
+        }
+        //前面7个表单元素获得焦点时，提示输入格式，失去焦点时，检查格式是否正确
+        //uname
+        uname.onfocus = function () {
+            unameTip.innerHTML = "用户名可包含(1`16位)_字母和数字";
+        }
+        uname.onblur = function () {
+            unameTip.innerHTML = /^[\w]{1,16}$/.test(uname.value) == true ? "用户名格式正确" : "用户名格式不正确";
+        }
+        //upwd
+        upwd.onfocus = function () {
+            upwdTip.innerHTML = "请输入6-8位密码";
+        }
+        upwd.onblur = function () {
+            upwdTip.innerHTML = (/^[0-9a-zA-Z,./!@#$%]{6,8}$/.test(upwd.value) && upwd.value != "") == true ?
+                "密码格式正确" : "密码格式不正确";
+        }
+        //upwd2
+        upwd2.onfocus = function () {
+            upwdTip2.innerHTML = "请输入6-8位密码";
+        }
+        upwd2.onblur = function () {
+            upwdTip2.innerHTML = (upwd.value == upwd2.value && upwd2.value != "") ? "密码格式正确" : "密码不一致";
+        }
+        //email
+        email.onfocus = function () {
+            emailTip.innerHTML = "请输入邮箱";
+        }
+        email.onblur = function () {
+            emailTip.innerHTML = /^[A-Za-z0-9]+@[a-zA-Z0-9]+(\.[a-zA-Z]+)+$/.test(email.value) == true ? "邮箱格式正确" :
+                "邮箱格式不正确";
+        }
+        //tele
+        tele.onfocus = function () {
+            teleTip.innerHTML = "请输入手机号码";
+        }
+        tele.onblur = function () {
+            teleTip.innerHTML = /^1[3456789]\d{9}$/.test(tele.value) == true ? "手机号码格式正确" : "手机号码格式不正确";
+        }
+        //tuijianren
+        tuijianren.onfocus = function () {
+            tuijianrenTip.innerHTML = "请输入推荐人工号";
+        }
+        tuijianren.onblur = function () {
+            tuijianrenTip.innerHTML = /^\d{8}$/.test(tuijianren.value) == true ? "推荐人工号格式正确" : "推荐人工号格式不正确";
+        }
+        //yanzhengma
+        yanzhengma.onfocus = function () {
+            yanzhengmaTip.innerHTML = "请输入验证码";
+        }
+        yanzhengma.onblur = function () {
+            yanzhengmaTip.innerHTML = yanzhengma.value == yanzhengmaContent.innerHTML ? "验证码正确" : "验证码不正确";
+        }
+
+        //gender
+        var gender;
+        var male = document.getElementById("m");
+        var female = document.getElementById("f");
+        if (male.checked) {
+            gender = 1;
+        } else if (female.checked) {
+            gender = 0;
+        }
+
+        //DOM获取提交按钮，发送AJAX请求到服务器
+        var regSubmit = document.getElementById("regSubmit");
+        regSubmit.onclick = function () {
+            // 提交提示信息
+            // var loginTip = document.getElementById("loginTip");
+            //0.星号表单格式验证，只要有一个不符合条件，均不提交ajax请求
+            // 用户名，密码验证正确
+            var str = /^[\w]{1,16}$/.test(uname.value) && /^[0-9a-zA-Z,./!@#$%]{6,8}$/.test(upwd.value);
+            // 重复密码，邮箱验证正确
+            str = str && (upwd.value == upwd2.value) && /^[A-Za-z0-9]+@[a-zA-Z0-9]+(\.[a-zA-Z]+)+$/.test(email
+                .value);
+            // 手机，验证码验证正确
+            str = str && /^1[3456789]\d{9}$/.test(tele.value) && (yanzhengma.value == yanzhengmaContent.innerHTML);
+            // 性别有勾选，条款同意有勾选
+            str = str && (male.checked || female.checked) && tonngyi.checked;
+            if (!str) {
+                // loginTip.innerHTML = "表单格式不正确";
+                alert("表单格式不正确");
+                return;
+            }
+            //1.创建异步对象
+            var xhr = new XMLHttpRequest();
+            //4.绑定监听，接收响应
+            xhr.onreadystatechange = function () {
+                //onreadystatechange全程会调用4次
+                //我们关注xhr.readyState==4
+                //目的是，我们只要最后一次
+                if (xhr.readyState == 4 && xhr.status == 200) {
+                    //接收响应
+                    var result = xhr.responseText;
+                    result = JSON.parse(result);
+                    // console.log(result)
+                    //如果返回-1，说明用户名已被注册
+                    if (result.code == -1) {
+                        unameTip.innerHTML = "用户名已存在"
+                        //返回1，说明此用户名可用，弹出注册成功，转到首页，并显示成登录状态
+                    } else if (result.code == 1) {
+                        alert("恭喜你注册成功");
+                        var obj = {};
+                        obj.uname = uname.value; //保存用户名到obj中
+                        obj.time = 3600 * 1000; //设置过期时间为登录后一个小时,临时设为20s,测试
+                        obj.date = new Date().getTime(); //获取现在时间
+                        var objString = JSON.stringify(obj); //把obj转换成JSON字符串，才能放入localStorage
+                        window.localStorage.setItem("data", objString); //将uname相关信息放入localStorage,属性名为data
+                        window.location.href = "index.html" //跳转到首页
+                    }
+                }
+            }
+            //2.打开连接，创建请求
+            var url =
+                `http://127.0.0.1:8080/register?uname=${uname.value}&upwd=${upwd.value}&email=${email.value}&tuijianren=${tuijianren.value}`
+            url += `&phone=${tele.value}&gender=${gender}`
+            xhr.open("get", url, true);
+            //3.发送请求
+            xhr.send(null);
+        }
+        //按下回车键，同样执行提交，等效于按下regSubmit按钮
+        document.onkeyup = function (e) {
+            if (e.keyCode == 13) {
+                regSubmit.onclick();
+            }
+        }
+    </script>
+
     <!-- //引入页头文件 -->
     <script src="./js/header.js"></script>
     <script src="./js/footer.js"></script>
