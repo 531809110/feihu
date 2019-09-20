@@ -48,7 +48,7 @@ server.get("/login",(req,res)=>{
   //6.1:接收网页传递数据 用户名和密码
   var u = req.query.uname;
   var p = req.query.upwd;
-console.log(u,p)
+// console.log(u,p)
   //6.2:创建sql
   var sql = "SELECT uid FROM fh_user";
   sql+=" WHERE uname = ? AND upwd = md5(?)";
@@ -60,7 +60,8 @@ console.log(u,p)
    if(result.length==0){
      res.send({code:-1,msg:"用户名或密码有误"})
    }else{
-     //获取当前登录用户uid
+     //获取当前登录用户uname
+    //  console.log(result)
      //result=[{uid:1}]
      var uid = result[0].uid;
      //将用户id保存session对象中
@@ -71,6 +72,37 @@ console.log(u,p)
    }
   });
 })
+
+// //功能1.1:用户成功登录后，传递用户名到浏览器
+// //启动服务器app.js/启动数据库
+// //打开浏览器
+// //http://127.0.0.1:8080/username
+
+// server.get("/username",(req,res)=>{
+//   //6.1:接收网页传递数据 用户名和密码
+// //2:判断当前用户是否登录成功
+// //  uid
+// //  如果uid为undefined 没登录
+// var uid = req.session.uid;
+// console.log(req.session.uid)
+// if(!uid){
+//   res.send({code:-1,msg:"请先登录"});
+//   return;
+// }else{
+// //6.2:创建sql
+// var sql = "SELECT uname FROM fh_user";
+// sql+=" WHERE uid = ?";
+//   //6.3:执行sql语句并且获取返回结果
+//   pool.query(sql,[uid],(err,result)=>{
+//    if(err)throw err;
+//    //6.4:获取当前登录用户uname
+//      req.session.uname = result[0].uname;
+//      console.log(req.session.uname)
+//      res.send({code:1,msg:"登录成功",sessionUname:req.session.uname});
+//   });
+// }
+// })
+
 //功能二:商品分页显示77~109
 //1:接收客户请求 /product GET
 // http://127.0.0.1:8080/product

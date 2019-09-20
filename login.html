@@ -137,12 +137,18 @@ submit.onclick=function(){
 						//接收响应
                         var result=xhr.responseText;
                         result=JSON.parse(result);
-                        console.log(result)
+                        // console.log(result)
                         if(result.code==-1){
                             var loginTip=document.getElementById("loginTip");
                             loginTip.innerHTML="用户名或密码错误"
                         }else if(result.code==1){
-                            window.location.href="index.html"
+                            var obj={};
+                            obj.uname=uname.value;  //保存用户名到obj中
+                            obj.time=3600*1000;  //设置过期时间为登录后一个小时,临时设为20s,测试
+                            obj.date=new Date().getTime();  //获取现在时间
+                            var objString=JSON.stringify(obj); //把obj转换成JSON字符串，才能放入localStorage
+                            window.localStorage.setItem("data",objString);  //将uname相关信息放入localStorage,属性名为data
+                            window.location.href="index.html"  //跳转到首页
                         }
 					}
 				}
