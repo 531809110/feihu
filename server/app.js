@@ -11,7 +11,7 @@ var pool = mysql.createPool({
   host: "127.0.0.1",
   user: "root",
   // 如果在本地，密码为空，如果在云上，密码有设置为root
-  password: "",
+  password: "root",
   port: 3306,
   connectionLimit: 20,
   database: "fh"
