@@ -10,6 +10,7 @@ const mysql = require("mysql");
 var pool = mysql.createPool({
   host: "127.0.0.1",
   user: "root",
+  // 如果在本地，密码为空，如果在云上，密码有设置为root
   password: "",
   port: 3306,
   connectionLimit: 20,
@@ -25,7 +26,7 @@ server.listen(8080);
 //     http://localhost:5050
 //5.2:每请求是否验证true
 server.use(cors({
-  origin: ["http://127.0.0.1:5500", "http://localhost:5500"],
+  origin: ["http://127.0.0.1:5500", "http://106.53.50.249"],
   credentials: true
 }))
 //6:配置session
