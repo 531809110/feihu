@@ -28,3 +28,12 @@
 
 a {
   text-decoration: none; }
+
+  @media (max-width: 575.98px) {
+    .col-xs {
+      max-width: 100%;
+      display: flex;
+      justify-content: start !important;
+      /* align-items:stretch; */
+    }
+  }
