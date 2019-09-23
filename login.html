@@ -162,7 +162,8 @@
                 }
             }
             //2.打开连接，创建请求
-            var url = `http://127.0.0.1:8080/login?uname=${uname.value}&upwd=${upwd.value}`
+            // 云的外网ip为http://106.53.50.249，放云上用这个，本地用127.0.0.1
+            var url = `http://106.53.50.249:8080/login?uname=${uname.value}&upwd=${upwd.value}`
             xhr.open("get", url, true);
             //3.发送请求
             xhr.send(null);
