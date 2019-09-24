@@ -35,5 +35,6 @@ a {
       display: flex;
       justify-content: start !important;
       /* align-items:stretch; */
+      /* flex-direction: row !important; */
     }
   }

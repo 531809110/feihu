@@ -24,12 +24,12 @@
         <header id="header"></header>
         <!-- 1:导航条-->
         <!-- 1-->
-        <div class="row mx-0 bg-warning">
-            <div class="col-2 px-0 ">
-                <div class="py-2 pl-5 my_big">全部商品分类</div>
+        <div class="row mx-0 bg-warning mt-2">
+            <div class="col-lg-2 px-0 ">
+                <div class="py-2 pl-3 my_big">全部商品分类</div>
             </div>
             <!-- 2-->
-            <div class="col-4 px-0">
+            <div class="col--lg-4 px-0">
                 <ul class="nav">
                     <li class="nav-item">
                         <a class="nav-link my_big" href="">首页</a>
@@ -46,7 +46,7 @@
                 </ul>
             </div>
             <!-- 3-->
-            <div class="col-4 px-0 offset-2">
+            <div class="col-lg-4 ml-3 px-0">
                 <ul class="nav d-flex align-items-center my-2">
                     <li class="nav-item bg-white rounded-left">
                         <div>
@@ -70,8 +70,8 @@
         </div>
         <!-- 左侧导航-->
         <div class="row mx-0 my_bg">
-            <div class="navbar col-2 d-flex justify-content-center">
-                <ul class="navbar-nav">
+            <div class="col-lg-2 d-flex justify-content-center">
+                <ul class="nav">
                     <li class="nav-item">
                         <a class="nav-link" href="">
                             <img src="image/order.png" alt="" />
@@ -135,7 +135,7 @@
                 </ul>
             </div>
             <!-- 中间轮播放图-->
-            <div class="col-8 px-0">
+            <div class="col-lg-8 px-0">
                 <div id="lunbo" class="carousel" data-ride="carousel">
                     <!-- 1.轮播图片-->
                     <div class="carousel-inner">
@@ -161,7 +161,7 @@
                 </div>
             </div>
             <!-- 右侧公告-->
-            <div class="col-2 px-0 px-3">
+            <div class="col-lg-2 px-0 px-3">
                 <div class="d-flex justify-content-center py-3 border-bottom">
                     <img src="image/foodstore_icon2.png" alt="" />
                     <span class="ml-2 my_big">公告</span>
@@ -180,14 +180,14 @@
         <!-- 一楼商品-->
         <!-- 导航条-->
         <div class="row mx-0 border-bottom mt-3 justify-content-between">
-            <div class="col-2 px-0 d-flex">
+            <div class="col-lg-2 px-0 d-flex">
                 <div>
                     <img src="image/product_detail_icon_bao_1.png" alt="" />
                 </div>
                 <h3 class="ml-2">家用电器</h3>
             </div>
             <!-- 导航栏右侧面包屑-->
-            <div class="col-5 px-0">
+            <div class="col-lg-5 px-0">
                 <ul class="breadcrumb mb-0 justify-content-end">
                     <li class="breadcrumb-item my_breadcrumb-item"><a class="my_color" href="">电风扇</a></li>
                     <li class="breadcrumb-item my_breadcrumb-item"><a class="my_color" href="">电饭煲</a></li>
@@ -200,17 +200,19 @@
         </div>
         <!-- 商品详细内容-->
         <div class="row mx-0">
-            <!-- 左边第一个长图-->
-            <div class="col-2 px-0">
-                <img class="w-100" src="image/1564401796.png" alt="" />
-            </div>
-            <!-- 中间两个上下图-->
-            <div class="col-4 px-0">
-                <img class="w-100" src="image/1564401814.png" alt="" />
-                <img class="w-100" src="image/1564401827.png" alt="" />
+            <div class="col-lg-6 px-0 d-flex">
+                <!-- 左边第一个长图-->
+                <div class="col-4 px-0">
+                    <img class="w-100" src="image/1564401796.png" alt="" />
+                </div>
+                <!-- 中间两个上下图-->
+                <div class="col-8 px-0">
+                    <img class="w-100" src="image/1564401814.png" alt="" />
+                    <img class="w-100" src="image/1564401827.png" alt="" />
+                </div>
             </div>
             <!-- 右侧6个图-->
-            <div class="col-6 px-0">
+            <div class="col-lg-6 px-0">
                 <div class="row mx-0">
                     <div class="col-4 px-0 d-flex flex-column align-items-center">
                         <img class="w-75" src="image/1564403090.png" alt="" />
@@ -248,9 +250,9 @@
         <!-- 新起一行，放8张广告-->
         <!-- 因为是8张，不能整除12，所以要分成两部分-->
         <!-- 1-->
-        <div class="row mx-0 mb-3">
-            <div class="col-6 px-0">
-                <div class="row mx-0">
+        <div class="row mx-0">
+            <div class="col-lg-6 px-0">
+                <div class="row mx-0 modal-open">
                     <div class="col-3 px-0">
                         <a href=""><img src="image/2F_logos_01.jpg" alt="" /></a>
                     </div>
@@ -266,8 +268,8 @@
                 </div>
             </div>
             <!-- 2-->
-            <div class="col-6 px-0">
-                <div class="row mx-0">
+            <div class="col-lg-6 px-0">
+                <div class="row mx-0 modal-open">
                     <div class="col-3 px-0">
                         <a href=""><img src="image/2F_logos_05.jpg" alt="" /></a>
                     </div>
@@ -286,7 +288,7 @@
         <!-- 页尾-->
         <footer id="footer"></footer>
     </div>
-    
+
     <script src="./js/header.js"></script>
     <script src="./js/footer.js"></script>
 </body>
