@@ -41,7 +41,7 @@
         }else{
           window.localStorage.removeItem("data");
           username.innerHTML = `<div col-sm-4 col-xs><span>您好，欢迎来到飞虎乐购！</span>
-          <a href="login.html">安全登录</a>
+          <a href="login.html">安全登录</a><br>
           <span> 还没加入我们？</span>
           <a href="register.html">免费注册</a><div>`
         }  //第二部分结束
