@@ -340,9 +340,10 @@
                 }
             }
             //2.打开连接，创建请求
-            // 云的外网ip为http://106.53.50.249，放云上用这个，本地用127.0.0.1
+            // 腾讯云的外网ip为http://106.53.50.249，放云上用这个，本地用127.0.0.1
+            // 阿里云的外网ip为47.94.227.93
             var url =
-                `http://106.53.50.249:8080/register?uname=${uname.value}&upwd=${upwd.value}&email=${email.value}&tuijianren=${tuijianren.value}`
+                `http://47.94.227.93:8080/register?uname=${uname.value}&upwd=${upwd.value}&email=${email.value}&tuijianren=${tuijianren.value}`
             url += `&phone=${tele.value}&gender=${gender}`
             xhr.open("get", url, true);
             //3.发送请求
