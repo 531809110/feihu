@@ -40,10 +40,10 @@
           window.history.go(0);">注销</a>`;
         }else{
           window.localStorage.removeItem("data");
-          username.innerHTML = `<div col-sm-4 col-xs><span>您好，欢迎来到飞虎乐购！</span>
-          <a href="login.html">安全登录</a><br>
+          username.innerHTML = `<span>您好，欢迎来到飞虎乐购！</span>
+          <a href="login.html">安全登录</a>
           <span> 还没加入我们？</span>
-          <a href="register.html">免费注册</a><div>`
+          <a href="register.html">免费注册</a>`
         }  //第二部分结束
       }
     }
